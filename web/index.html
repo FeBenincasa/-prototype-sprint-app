@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Reminder App (Eel Demo)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>📋 Task Reminder App</h1>
+            <p class="subtitle">Desktop app built with Python Eel</p>
+        </header>
+
+        <!-- Add Task Section -->
+        <section class="add-task-section">
+            <h2>Add New Task</h2>
+            <form id="taskForm" class="task-form">
+                <div class="form-group">
+                    <label for="taskTitle">Task Title:</label>
+                    <input 
+                        type="text" 
+                        id="taskTitle" 
+                        placeholder="Enter your task..." 
+                        required
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="taskDate">Due Date (optional):</label>
+                    <input 
+                        type="date" 
+                        id="taskDate"
+                    >
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    ➕ Add Task
+                </button>
+            </form>
+        </section>
+
+        <!-- Tasks List Section -->
+        <section class="tasks-section">
+            <div class="section-header">
+                <h2>Your Tasks</h2>
+                <button id="refreshTasks" class="btn btn-secondary">
+                    🔄 Refresh
+                </button>
+            </div>
+            
+            <div id="tasksContainer" class="tasks-container">
+                <div class="loading">Loading tasks...</div>
+            </div>
+        </section>
+
+        <!-- Email Reminder Section -->
+        <section class="email-section">
+            <h2>Daily Reminder</h2>
+            <div class="email-form">
+                <div class="form-group">
+                    <label for="emailInput">Email Address:</label>
+                    <input 
+                        type="email" 
+                        id="emailInput" 
+                        placeholder="your@email.com"
+                        value="demo@example.com"
+                    >
+                </div>
+                
+                <button id="sendReminder" class="btn btn-accent">
+                    📧 Send Daily Reminder
+                </button>
+                
+                <div id="emailStatus" class="status-message"></div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>Built with ❤️ using Python + Eel | SQLite Database | SMTP Email</p>
+        </footer>
+    </div>
+
+    <!-- Task Template (hidden) -->
+    <template id="taskTemplate">
+        <div class="task-item" data-task-id="">
+            <div class="task-content">
+                <input type="checkbox" class="task-checkbox">
+                <div class="task-info">
+                    <span class="task-title"></span>
+                    <span class="task-date"></span>
+                </div>
+            </div>
+            <button class="delete-btn" title="Delete task">🗑️</button>
+        </div>
+    </template>
+
+    <!-- Scripts -->
+    <script type="text/javascript" src="eel.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
