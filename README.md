@@ -215,10 +215,9 @@ Este projeto está sob a licença MIT. Veja [LICENSE](LICENSE) para mais detalhe
 
 ## 👨‍💻 Autor
 
-**Seu Nome**
-- GitHub: [@seu-usuario](https://github.com/seu-usuario)
-- LinkedIn: [Seu Perfil](https://linkedin.com/in/seu-perfil)
-- Email: seu.email@exemplo.com
+Felipe Benincasa
+- GitHub: [@FeBenincasa]([https://github.com/seu-usuario](https://github.com/FeBenincasa))
+- LinkedIn: [Felipe Benincasa]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/felipe-benincasa-4601b01a3))
 
 ---
 
@@ -245,4 +244,4 @@ python main.py
 
 ---
 
-**Feito com ❤️ e muito ☕ por [Seu Nome]**
+**Feito com ❤️ e muito ☕ por [Felipe Benincasa]**
